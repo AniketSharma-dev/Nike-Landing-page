@@ -11,12 +11,14 @@ const Navbar = () => {
     <header>
       <nav className="w-full md:p-3 md:px-28 p-1 px-4 flex justify-between items-center">
         <div className=" w-[90px] px-3 py-5">
+          <a href="/">
           <img
             src={Logo}
             alt="Logo"
             className=" cursor-pointer object-cover"
             width={90}
           />
+          </a>
         </div>
         <ul className="flex ">
           {menuItems.map((item) => (
