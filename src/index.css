@@ -21,3 +21,6 @@ body {
     height: 2px;
     background-color: black;
 }
+.scrollbarHidden::-webkit-scrollbar{
+    display: none;
+}

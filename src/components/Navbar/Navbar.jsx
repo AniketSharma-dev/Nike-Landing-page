@@ -9,21 +9,21 @@ const Navbar = () => {
 
   return (
     <header>
-      <nav className="w-full p-3 px-28 flex justify-between items-center">
-        <div className="px-3 py-5">
+      <nav className="w-full md:p-3 md:px-28 p-1 px-4 flex justify-between items-center">
+        <div className=" w-[90px] px-3 py-5">
           <img
             src={Logo}
             alt="Logo"
-            className="cursor-pointer object-cover"
+            className=" cursor-pointer object-cover"
             width={90}
           />
         </div>
         <ul className="flex ">
           {menuItems.map((item) => (
-            <li className="px-8 ">
+            <li key={item} className="px-8 ">
               <a
-                key={item}
-                className={` font-semibold relative cursor-pointer 
+                
+                className={` font-semibold relative cursor-pointer  hidden md:block
                             ${
                               activeItem === item
                                 ? "text-black half-underline"
